@@ -21,8 +21,10 @@ _1 вариант_
 
 ---
 
-Компиляция и запуск:
+_Компиляция и запуск:_
 
 > gcc parent.c -o parent
+
 > gcc child.c -o child
+
 > ./parent
