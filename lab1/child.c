@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
         char *ptr = line;
 
-        float sum = 0.0f;
+        double sum = 0.0f;
 
         while (*ptr != '\0')
         {
