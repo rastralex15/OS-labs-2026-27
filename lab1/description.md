@@ -24,7 +24,7 @@ _1 вариант_
 _Компиляция и запуск:_
 
 ```
- gcc parent.c -o parent
-  gcc child.c -o child
- ./parent
+gcc parent.c -o parent
+gcc child.c -o child
+./parent
 ```
