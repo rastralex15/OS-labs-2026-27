@@ -132,7 +132,7 @@ int main(int argc, char *argv[])
     printf("Input file: %s\n", argv[1]);
     printf("Array size: %d\n\n", n);
 
-    /* Sequential version. */
+    // Sequential version
     memcpy(arr, original, sizeof(int) * (size_t)n);
 
     double start = get_time();
@@ -149,7 +149,6 @@ int main(int argc, char *argv[])
 
     printf("Sequential TimSort: %.3f ms\n\n", sequential_time * 1000.0);
 
-    /* Thread counts for the experiment. */
     const int thread_counts[] = {
         1, 2, 4, 8, 16, 22, 32, 128, 1024};
 
@@ -164,11 +163,11 @@ int main(int argc, char *argv[])
 
     printf("------------------------------------------------------------\n");
 
+    // Parallel version
     for (int i = 0; i < count; i++)
     {
         int threads = thread_counts[i];
 
-        /* Restore the original unsorted input. */
         memcpy(arr, original, sizeof(int) * (size_t)n);
 
         start = get_time();
