@@ -24,7 +24,7 @@
 **Компиляция и запуск:**
 
 ```bash
-gcc parent.c -o parent.o -pthread -lrt
-gcc child.c -o child.o -pthread -lrt
+gcc parent.c -o parent.o
+gcc child.c -o child.o
 ./parent.o
 ```

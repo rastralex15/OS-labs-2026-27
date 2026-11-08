@@ -11,9 +11,13 @@
 *.swp
 .DS_Store
 
-# Папки настроек VS Code и других IDE (если используете)
+# Папки настроек VS Code и других IDE
 .vscode/
 .idea/
 *.user
 
+# Отчеты и текстовые файлы
 *.pdf
+*.docx
+*.doc
+*.txt
